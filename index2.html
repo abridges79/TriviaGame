@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <div id="container">
+                <div id="results">
+                <header>
+                  <h1>45 Seconds Begins Now!!!</h1>
+                  <div id = "displayDiv">Seconds Remaining: 45</div>
+                  <p>How Well do You Know <strong>Nicolas Cage?</strong></p>
+                </header>
+                <section>
+                  
+                  <form name="quizForm" onsubmit="return submitAnswers()">
+                    <h3>1. What is Nicolas Cage's Real Name?</h3>
+                    <input type="radio" name="q1" value="a" id="q1a">a. Nicolas Coppoloa
+                    <input type="radio" name="q1" value="b" id="q1b">b. Nick Cannon
+                    <input type="radio" name="q1" value="c" id="q1c">c. Nicolas Cole
+                    <input type="radio" name="q1" value="d" id="q1d">d. Nicholia Gallaway III
+                    <br><br>    
+                    <img src="https://i.imgur.com/AV5HMKp.gif" alt="Smiley" width="350" height="200">
+                    
+                    
+                    <br><br>
+                    <h3>2. Cage was married to the same woman as? </h3>
+                    <input type="radio" name="q2" value="a" id="q2a">a. Michael Jackson
+                    <input type="radio" name="q2" value="b" id="q2b">b. Tommy Lee Jones
+                    <input type="radio" name="q2" value="c" id="q2c">c. Tommy Lee
+                    <input type="radio" name="q2" value="d" id="q2d">d. P Diddy<br>  
+                    <br>      
+                    <img src="https://i.imgur.com/ji6qi2p.gif" alt="Smiley" width="350" height="200">
+                    
+                    <br><br>
+                    <h3>3. Nicolas Cage named his son:</h3>
+                    <input type="radio" name="q3" value="a" id="q3a">a. Dr. Pepper
+                    <input type="radio" name="q3" value="b" id="q3b">b. Kal-el, after Superman’s “Kryptonian name.”
+                    <input type="radio" name="q3" value="c" id="q3b">c. Fred Durst
+                    <input type="radio" name="q3" value="d" id="q3b">d. Nicolas II<br>  
+                    <br>  
+                    <img src="http://i.imgur.com/neq3lwq.gif" alt="Smiley" width="350" height="200">
+
+                    <br><br>
+                    <h3>4. Nicolas Cage's first movie was:</h3>
+                    <input type="radio" name="q4" value="a" id="q4a">a. Raising Arizona
+                    <input type="radio" name="q4" value="b" id="q4b">b. Brubaker
+                    <input type="radio" name="q4" value="c" id="q4b">c. Fast Times at Ridgemont High  
+                    <input type="radio" name="q4" value="d" id="q4b">d. Birdy<br>  
+                    <br>  
+                    <img src="https://i.pinimg.com/originals/b2/71/12/b27112a967807fdd52c5803e8fc6bb1d.gif" alt="Smiley" width="350" height="200">                    
+                    <br><br>
+                    
+
+                    <input type="submit" value="Submit Answers">
+                  </form></div>
+                </section>
+                <footer>
+                  
+                </footer> 
+              </div>
+       
+
+    <!-- instructions
+    You'll create a trivia form with multiple choice or true/false options (your choice).
+
+The player will have a limited amount of time to finish the quiz.
+
+The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+Don't let the player pick more than one answer per question.
+
+Don't forget to include a countdown timer. -->
+<!-- Pseudo Code
+Wait for user input to start game with an onclick element to call a funciton to start running all script
+Timer starts as soon as user clicks start button - set a timer/interval for 120 seconds when timer is complete the page will then run a function 
+that counts the correct answers, wrong answers and unanswered questions this page writes over all existing html (inner.html)
+the questions will be multiple choice (3 options a, b, c)
+you will need to make vars for following items
+timer, answer key (array), total correct answers, total missed answers, total unanswered questions, (possibly user guess?)
+a radio button will give the user options to choose the answer, a radio button returns a true/false response 
+create a way to take data from the user click and compare it to the index position for the array containing the answers 
+create an else if statment that takes the user input and compares against the asnwer key if correct add to correct answers, if 
+incorrect add to this, else unasnwered add to this (this would be for unanswered)
+possible way to change radio button to an answer if else statement so for example you could have four buttons 
+for four possible answers if button one equals true then user guess = a, if button two equals true = b 
+make buttons where you can only click one button not multiple at each question 
+
+choicesArray[2] = [{
+    text: "Pizza",
+    correct: true
+}, {
+    text: "Pasta",
+    correct: false
+}, {
+    text: "Sushi",
+    correct: false
+}];
+// use index 1 for the second choice in the list.
+if(choicesArray[2][1].correct === true) {
+    //it's right!
+} else {
+    //it's wrong...
+}-->
+
+
+</body>
+</html>
